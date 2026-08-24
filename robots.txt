@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://umerfarooqkhan-seo.github.io/umerkhan-seo/sitemap.xml
