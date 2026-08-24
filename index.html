@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Umer Farooq Khan | SEO Specialist & SEO Team Lead</title>
+
+  <meta name="description" content="Umer Farooq Khan is an SEO Specialist and SEO Team Lead specializing in Technical SEO, Local SEO, On-Page SEO, SEO Audits, Keyword Research and Content Strategy.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #0b1120;
+      color: #e5e7eb;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      padding: 25px 0;
+      border-bottom: 1px solid #1e293b;
+      position: sticky;
+      top: 0;
+      background: rgba(11, 17, 32, 0.95);
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-content {
+      width: 100%;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 75px);
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero h2 {
+      font-size: clamp(20px, 3vw, 30px);
+      font-weight: normal;
+      color: #94a3b8;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: auto;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 13px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      border: 1px solid #38bdf8;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: #07111f;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #94a3b8;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+      color: #cbd5e1;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #f8fafc;
+    }
+
+    .card p {
+      color: #94a3b8;
+    }
+
+    .skills span,
+    .tools span {
+      display: inline-block;
+      background: #111827;
+      border: 1px solid #1e293b;
+      padding: 10px 15px;
+      margin: 6px;
+      border-radius: 20px;
+      color: #cbd5e1;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 250px;
+    }
+
+    .project-card .tag {
+      color: #38bdf8;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .project-card .project-link {
+      margin-top: auto;
+      padding-top: 20px;
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    .timeline {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .timeline-item {
+      border-left: 2px solid #38bdf8;
+      padding: 0 0 30px 25px;
+      margin-bottom: 10px;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 5px;
+    }
+
+    .timeline-item p {
+      color: #94a3b8;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #94a3b8;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #1e293b;
+      color: #64748b;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        gap: 12px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero {
+        min-height: 75vh;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Umer <span>Khan</span></div>
+
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+
+      <h1>Umer <span>Farooq Khan</span></h1>
+
+      <h2>SEO Specialist | SEO Team Lead</h2>
+
+      <p>
+        I help businesses improve organic visibility, search rankings,
+        website performance and qualified organic traffic through
+        data-driven SEO strategies.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-primary" href="#projects">View My Work</a>
+
+        <a class="btn" href="https://pk.linkedin.com/in/umer-farooq-khan" target="_blank">
+          LinkedIn
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>SEO, strategy and organic growth</p>
+      </div>
+
+      <div class="about">
+        <p>
+          I'm an SEO professional specializing in Technical SEO,
+          On-Page SEO, Off-Page SEO, Local SEO, Keyword Research,
+          SEO Audits, Content Strategy and Search Performance Analysis.
+        </p>
+
+        <br>
+
+        <p>
+          My experience includes working with websites across education,
+          healthcare, pest control, local businesses and digital marketing.
+          I focus on combining technical improvements, content strategy
+          and data analysis to create sustainable organic growth.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>SEO Skills</h2>
+        <p>Areas I specialize in</p>
+      </div>
+
+      <div class="skills" style="text-align:center;">
+        <span>Technical SEO</span>
+        <span>On-Page SEO</span>
+        <span>Off-Page SEO</span>
+        <span>Local SEO</span>
+        <span>Keyword Research</span>
+        <span>SEO Audits</span>
+        <span>Content Strategy</span>
+        <span>Competitor Analysis</span>
+        <span>Internal Linking</span>
+        <span>Schema Markup</span>
+        <span>Core Web Vitals</span>
+        <span>SEO Reporting</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- TOOLS -->
+  <section>
+    <div class="container">
+
+      <div class="section-title">
+        <h2>SEO Tools</h2>
+        <p>Tools I use for SEO analysis and optimization</p>
+      </div>
+
+      <div class="tools" style="text-align:center;">
+        <span>Google Search Console</span>
+        <span>Google Analytics 4</span>
+        <span>Semrush</span>
+        <span>Ahrefs</span>
+        <span>Screaming Frog</span>
+        <span>Sitebulb</span>
+        <span>Google Keyword Planner</span>
+        <span>Rank Math</span>
+        <span>PageSpeed Insights</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Featured SEO Projects</h2>
+        <p>Selected SEO work and case studies</p>
+      </div>
+
+      <div class="grid">
+
+        <div class="card project-card">
+          <div class="tag">EDUCATION & TRAINING</div>
+
+          <h3>Inspire London College</h3>
+
+          <p>
+            Technical SEO, keyword research, on-page optimization,
+            content strategy, internal linking, schema and search
+            performance analysis.
+          </p>
+
+          <a class="project-link"
+             href="https://github.com/UmerFarooqKhan-SEO/inspire-london-college-seo-case-study"
+             target="_blank">
+            View Case Study →
+          </a>
+        </div>
+
+
+        <div class="card project-card">
+          <div class="tag">LOCAL SEO</div>
+
+          <h3>Pestigo</h3>
+
+          <p>
+            Local SEO, location-based keyword research, service page
+            optimization, content strategy, internal linking and
+            competitor analysis.
+          </p>
+
+          <a class="project-link"
+             href="https://github.com/UmerFarooqKhan-SEO/pestigo-seo-case-study"
+             target="_blank">
+            View Case Study →
+          </a>
+        </div>
+
+
+        <div class="card project-card">
+          <div class="tag">MORE PROJECTS</div>
+
+          <h3>Additional SEO Projects</h3>
+
+          <p>
+            More SEO projects and detailed case studies will be added
+            as the portfolio continues to grow.
+          </p>
+
+          <a class="project-link"
+             href="https://github.com/UmerFarooqKhan-SEO"
+             target="_blank">
+            View GitHub →
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CAREER -->
+  <section id="journey">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Career Journey</h2>
+        <p>My professional SEO journey</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <h3>Started Learning SEO</h3>
+          <p>
+            Developed a strong foundation in search engine optimization,
+            keyword research and website analysis.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>SEO Executive</h3>
+          <p>
+            Worked on technical SEO, on-page optimization, content,
+            keyword research and website audits.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>SEO Specialist</h3>
+          <p>
+            Worked across multiple industries and international SEO
+            projects while developing data-driven strategies.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>SEO Team Lead</h3>
+          <p>
+            Leading SEO activities, developing strategies and helping
+            team members improve their SEO implementation and workflow.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- EDUCATION -->
+  <section>
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Education & Certifications</h2>
+      </div>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Technical SEO Training</h3>
+          <p>Diploma — Alison</p>
+        </div>
+
+        <div class="card">
+          <h3>Advanced Media Marketing Management</h3>
+          <p>Diploma</p>
+        </div>
+
+        <div class="card">
+          <h3>Environmental Sciences</h3>
+          <p>BS (Hons) — University of Haripur</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container contact">
+
+      <div class="section-title">
+        <h2>Let's Connect</h2>
+        <p>Interested in SEO, organic growth or collaboration?</p>
+      </div>
+
+      <a class="btn btn-primary"
+         href="https://pk.linkedin.com/in/umer-farooq-khan"
+         target="_blank">
+        Connect on LinkedIn
+      </a>
+
+      <br><br>
+
+      <a class="btn"
+         href="https://github.com/UmerFarooqKhan-SEO"
+         target="_blank">
+        Explore My GitHub
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  © 2026 Umer Farooq Khan. SEO Specialist & SEO Team Lead.
+</footer>
+
+</body>
+</html>
