@@ -191,6 +191,7 @@
       .hero-content {
   width: 100%;
   text-align: center;
+  animation: fadeUp 0.9s ease-out;
 }
 
 .profile-photo {
@@ -370,7 +371,54 @@
         border-top: 1px solid #1e293b;
         color: #64748b;
       }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  animation: fadeUp 0.8s ease-out;
+}
+
+.section-title {
+  animation: fadeUp 0.7s ease-out;
+}
+
+.card {
+  animation: fadeUp 0.7s ease-out;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.12);
+}
+
+.skills span {
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.skills span:hover {
+  transform: translateY(-3px);
+  border-color: #38bdf8;
+}
+
+.btn {
+  transition: transform 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.15);
+}
       @media (max-width: 700px) {
         nav {
           flex-direction: column;
