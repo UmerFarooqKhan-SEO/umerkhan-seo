@@ -3,9 +3,20 @@
 
   <url>
     <loc>https://umerfarooqkhan-seo.github.io/umerkhan-seo/</loc>
-    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://umerfarooqkhan-seo.github.io/umerkhan-seo/pestigo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://umerfarooqkhan-seo.github.io/umerkhan-seo/theflowershop.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
