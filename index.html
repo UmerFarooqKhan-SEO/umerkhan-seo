@@ -300,15 +300,18 @@
       }
 
       .skills span,
-      .tools span {
-        display: inline-block;
-        background: #111827;
-        border: 1px solid #1e293b;
-        padding: 10px 15px;
-        margin: 6px;
-        border-radius: 20px;
-        color: #cbd5e1;
-      }
+.tools span {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.skills span:hover,
+.tools span:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
 
       .project-card {
         display: flex;
@@ -449,12 +452,16 @@
 }
 
 .btn {
-  transition: transform 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.15);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.18);
+  opacity: 0.95;
 }
       @media (max-width: 700px) {
         nav {
@@ -593,6 +600,18 @@
   footer {
     font-size: 13px;
     padding: 22px 15px;
+  }
+
+}
+        @media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 
 }
