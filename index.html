@@ -508,26 +508,6 @@
   box-shadow: 0 8px 20px rgba(56, 189, 248, 0.18);
   opacity: 0.95;
 }
-      @media (max-width: 700px) {
-        nav {
-          flex-direction: column;
-          gap: 15px;
-        }
-
-        nav ul {
-          gap: 12px;
-          font-size: 14px;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-
-        .hero {
-          min-height: 75vh;
-        }
-
-        section {
-  padding: 45px 0;
-}
        @media (max-width: 700px) {
 
   nav {
@@ -640,11 +620,15 @@
     font-size: 14px;
   }
 
-  /* Make Projects and Results vertical */
-  #projects .container > div,
-  #results .container > div {
-    grid-template-columns: 1fr !important;
-  }
+  /* Mobile project layout */
+.featured-projects-grid {
+  flex-direction: column;
+  align-items: center;
+}
+
+#results .container > div {
+  grid-template-columns: 1fr !important;
+}
 
   footer {
     font-size: 13px;
@@ -904,12 +888,7 @@
     </div>
 
     <div style="
-      display:grid;
-      grid-template-columns:repeat(3, 1fr);
-      gap:20px;
-      width:100%;
-      margin-top:30px;
-    ">
+     <div class="featured-projects-grid">
 
       <!-- FLOWER PALACE -->
       <div class="featured-project-card">
