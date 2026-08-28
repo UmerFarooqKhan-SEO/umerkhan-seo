@@ -648,6 +648,14 @@
   }
 
 }
+  .featured-projects-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
         .featured-project-card {
   border: 1px solid #243044;
   border-radius: 12px;
@@ -658,7 +666,7 @@
 }
 
 .featured-project-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px) scale(1.01);
   border-color: #38bdf8;
   box-shadow: 0 15px 35px rgba(56, 189, 248, 0.14);
 }
@@ -676,6 +684,14 @@
 .featured-project-card a {
   color: #38bdf8;
   font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.featured-project-card a:hover {
+  transform: translateX(4px);
+  opacity: 0.8;
 }
 
 .featured-project-card a:hover {
