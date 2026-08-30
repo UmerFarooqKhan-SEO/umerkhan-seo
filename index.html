@@ -621,11 +621,11 @@
   }
 
   /* Mobile project layout */
-.featured-projects-grid {
-  flex-direction: column;
-  align-items: center;
+@media (max-width: 768px) {
+  .featured-projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
-
 #results .container > div {
   grid-template-columns: 1fr !important;
 }
@@ -656,7 +656,16 @@
   margin-top: 20px;
 }
         .featured-project-card {
-          .expertise-box {
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid #243044;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  background: #111827;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
   background: #111827;
   border: 1px solid #243044;
   border-radius: 12px;
@@ -927,54 +936,7 @@
         </div>
       </section>
 
-<!-- FEATURED SEO PROJECTS -->
-<section id="projects">
-  <div class="container">
 
-    <div class="section-title">
-      <h2>Featured SEO Projects</h2>
-      <p>SEO case studies, organic growth and search performance</p>
-    </div>
-
-    <div style="
-     <div class="featured-projects-grid">
-
-      <!-- FLOWER PALACE -->
-      <div class="featured-project-card">
-        <h3>Flower Palace</h3>
-
-        <p style="margin:15px 0;">
-          Local SEO case study focused on keyword research,
-          on-page optimization, technical SEO, content strategy
-          and improving organic search visibility.
-        </p>
-
-        <a href="theflowershop.html">
-          View Case Study →
-        </a>
-
-      </div>
-
-
-      <!-- PESTIGO -->
-      <div class="featured-project-card">
-        <h3>Pestigo</h3>
-
-        <p style="margin:15px 0;">
-          SEO case study focused on Local SEO, technical SEO,
-          keyword research, on-page optimization, content strategy
-          and increasing organic search performance.
-        </p>
-
-        <a href="pestigo.html">
-          View Case Study →
-        </a>
-
-      </div>
-            
-    </div>
-
-  </div>
   <!-- FEATURED SEO PROJECTS -->
 <section id="projects">
   <div class="container">
