@@ -251,13 +251,15 @@ section {
         color: #38bdf8;
       }
 
-      .hero {
-  min-height: 85vh;
+     .hero {
+  min-height: 88vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   position: relative;
   overflow: hidden;
+  padding: 80px 0;
 }
   .hero::before {
   content: "";
@@ -385,15 +387,18 @@ section {
   box-shadow: 0 8px 25px rgba(56, 189, 248, 0.08);
 }
 
-      .btn-primary {
-        background: #38bdf8;
-        color: #07111f;
-      }
+     .btn-primary {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #07111f;
+  border-color: transparent;
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.20);
+}
 
-      .btn:hover {
-        transform: translateY(-3px);
-        opacity: 0.9;
-      }
+      btn:hover {
+  transform: translateY(-4px);
+  opacity: 1;
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.22);
+}
 
       section {
   padding: 55px 0;
