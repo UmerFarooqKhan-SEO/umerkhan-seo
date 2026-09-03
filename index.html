@@ -139,7 +139,51 @@
   position: relative;
   overflow-x: hidden;
 }
+      body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
 
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.025) 1px, transparent 1px);
+
+  background-size: 55px 55px;
+}
+      body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  top: -180px;
+  right: -180px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.08),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+  animation: backgroundGlow 8s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundGlow {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-100px, 80px);
+  }
+}
+/* Extra ambient glow */
+section {
+  position: relative;
+  z-index: 1;
+}
       a {
         color: inherit;
         text-decoration: none;
