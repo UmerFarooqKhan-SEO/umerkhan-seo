@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Umer Farooq Khan is an SEO Expert specializing in Technical SEO, Local SEO, On-Page SEO, SEO Audits, Keyword Research, AEO and organic growth."
+    content="Umer Farooq Khan is an SEO Expert specialising in Technical SEO, Local SEO, On-Page SEO, SEO Audits, Keyword Research, AEO and organic growth."
   />
 
   <meta name="robots" content="index, follow" />
@@ -31,7 +31,7 @@
 
   <meta
     property="og:description"
-    content="SEO Expert specializing in Technical SEO, Local SEO, On-Page SEO, SEO Audits, Keyword Research and organic growth."
+    content="SEO Expert specialising in Technical SEO, Local SEO, On-Page SEO, SEO Audits, Keyword Research and organic growth."
   />
 
   <meta
@@ -57,7 +57,7 @@
   />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <meta
     name="twitter:title"
@@ -74,11 +74,15 @@
     content="https://umerfarooqkhan-seo.github.io/umerkhan-seo/Umer%20Farooq%20Khan%20SEO%20Expert.jpg"
   />
 
-  <!-- PERSON + WEBSITE + SERVICES SCHEMA -->
+  <!-- =====================================================
+       STRUCTURED DATA
+  ====================================================== -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
+
       {
         "@type": "Person",
         "@id": "https://umerfarooqkhan-seo.github.io/umerkhan-seo/#person",
@@ -108,6 +112,7 @@
           "GEO"
         ]
       },
+
       {
         "@type": "WebSite",
         "@id": "https://umerfarooqkhan-seo.github.io/umerkhan-seo/#website",
@@ -118,16 +123,18 @@
           "@id": "https://umerfarooqkhan-seo.github.io/umerkhan-seo/#person"
         }
       },
+
       {
         "@type": "OfferCatalog",
         "@id": "https://umerfarooqkhan-seo.github.io/umerkhan-seo/#seo-pricing",
         "name": "SEO Services and Pricing",
         "url": "https://umerfarooqkhan-seo.github.io/umerkhan-seo/#pricing",
         "itemListElement": [
+
           {
             "@type": "Offer",
             "name": "Starter SEO",
-            "description": "SEO foundation package for small businesses and websites.",
+            "description": "SEO foundation package priced at $150 per month and PKR 42,000 per month.",
             "price": "150",
             "priceCurrency": "USD",
             "url": "https://umerfarooqkhan-seo.github.io/umerkhan-seo/#pricing",
@@ -135,10 +142,11 @@
               "@id": "https://umerfarooqkhan-seo.github.io/umerkhan-seo/#person"
             }
           },
+
           {
             "@type": "Offer",
             "name": "Growth SEO",
-            "description": "Complete SEO strategy for businesses seeking consistent organic visibility and growth.",
+            "description": "SEO growth package priced at $300 per month and PKR 84,000 per month.",
             "price": "300",
             "priceCurrency": "USD",
             "url": "https://umerfarooqkhan-seo.github.io/umerkhan-seo/#pricing",
@@ -146,10 +154,11 @@
               "@id": "https://umerfarooqkhan-seo.github.io/umerkhan-seo/#person"
             }
           },
+
           {
             "@type": "Offer",
             "name": "Advanced SEO",
-            "description": "Comprehensive SEO campaign for competitive websites and businesses targeting larger markets.",
+            "description": "Advanced SEO package priced at $500 per month and PKR 140,000 per month.",
             "price": "500",
             "priceCurrency": "USD",
             "url": "https://umerfarooqkhan-seo.github.io/umerkhan-seo/#pricing",
@@ -157,13 +166,16 @@
               "@id": "https://umerfarooqkhan-seo.github.io/umerkhan-seo/#person"
             }
           }
+
         ]
       }
+
     ]
   }
   </script>
 
   <style>
+
     /* =========================================================
        RESET
     ========================================================= */
@@ -307,18 +319,16 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 7px;
+      gap: 5px;
       list-style: none;
     }
 
     .nav-links a {
       display: block;
-      padding: 9px 14px;
-
+      padding: 9px 12px;
       color: #94a3b8;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 600;
-
       border-radius: 9px;
 
       transition:
@@ -339,12 +349,31 @@
       background: #38bdf8 !important;
     }
 
+    .menu-toggle {
+      display: none;
+
+      width: 42px;
+      height: 42px;
+
+      align-items: center;
+      justify-content: center;
+
+      color: #cbd5e1;
+      background: rgba(15, 23, 42, 0.7);
+
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      border-radius: 10px;
+
+      cursor: pointer;
+    }
+
     /* =========================================================
        HERO
     ========================================================= */
 
     .hero {
       min-height: calc(100vh - 70px);
+
       display: flex;
       align-items: center;
 
@@ -379,7 +408,6 @@
 
       font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.3px;
     }
 
     .status-dot {
@@ -399,7 +427,6 @@
       font-weight: 850;
 
       color: #f8fafc;
-
       margin-bottom: 22px;
     }
 
@@ -426,11 +453,9 @@
 
     .hero-description {
       max-width: 700px;
-
       color: #aab7c8;
       font-size: 17px;
       line-height: 1.8;
-
       margin-bottom: 30px;
     }
 
@@ -476,11 +501,13 @@
     .btn-primary {
       color: #03111c;
       border-color: transparent;
-      background: linear-gradient(
-        135deg,
-        #7dd3fc,
-        #38bdf8
-      );
+
+      background:
+        linear-gradient(
+          135deg,
+          #7dd3fc,
+          #38bdf8
+        );
 
       box-shadow:
         0 10px 30px rgba(56, 189, 248, 0.18);
@@ -488,14 +515,18 @@
 
     .btn-primary:hover {
       color: #03111c;
-      background: linear-gradient(
-        135deg,
-        #bae6fd,
-        #38bdf8
-      );
+
+      background:
+        linear-gradient(
+          135deg,
+          #bae6fd,
+          #38bdf8
+        );
     }
 
-    /* HERO VISUAL */
+    /* =========================================================
+       HERO VISUAL
+    ========================================================= */
 
     .hero-visual {
       position: relative;
@@ -532,11 +563,12 @@
 
       border-radius: 50%;
 
-      background: radial-gradient(
-        circle,
-        rgba(56, 189, 248, 0.13),
-        transparent 65%
-      );
+      background:
+        radial-gradient(
+          circle,
+          rgba(56, 189, 248, 0.13),
+          transparent 65%
+        );
 
       filter: blur(12px);
     }
@@ -556,7 +588,6 @@
       height: 230px;
 
       object-fit: cover;
-
       border-radius: 50%;
       border: 3px solid #38bdf8;
 
@@ -586,7 +617,8 @@
 
       backdrop-filter: blur(12px);
 
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+      box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
     }
 
     .floating-card strong {
@@ -633,7 +665,6 @@
       border: 1px solid rgba(148, 163, 184, 0.10);
 
       border-radius: 15px;
-
       backdrop-filter: blur(12px);
 
       transition:
@@ -681,8 +712,8 @@
 
     .section-kicker {
       display: block;
-
       color: #38bdf8;
+
       font-size: 12px;
       font-weight: 800;
 
@@ -694,9 +725,11 @@
 
     .section-title {
       color: #f8fafc;
+
       font-size: clamp(32px, 4vw, 45px);
       line-height: 1.1;
       letter-spacing: -1.5px;
+
       margin-bottom: 14px;
     }
 
@@ -763,6 +796,7 @@
       padding: 13px;
 
       border-radius: 11px;
+
       background: rgba(56, 189, 248, 0.035);
       border: 1px solid rgba(56, 189, 248, 0.08);
     }
@@ -779,7 +813,6 @@
       background: rgba(56, 189, 248, 0.08);
 
       border-radius: 9px;
-
       font-weight: 800;
     }
 
@@ -902,14 +935,12 @@
       background:
         linear-gradient(
           160deg,
-          rgba(17, 27, 45, 0.90),
-          rgba(8, 14, 26, 0.85)
+          rgba(17, 27, 45, 0.92),
+          rgba(8, 14, 26, 0.84)
         );
 
       border: 1px solid rgba(148, 163, 184, 0.10);
       border-radius: 18px;
-
-      overflow: hidden;
 
       transition:
         transform 0.3s ease,
@@ -918,13 +949,12 @@
     }
 
     .project-card:hover {
-      transform: translateY(-9px);
+      transform: translateY(-8px);
 
-      border-color: rgba(56, 189, 248, 0.40);
+      border-color: rgba(56, 189, 248, 0.35);
 
       box-shadow:
-        0 25px 60px rgba(0, 0, 0, 0.25),
-        0 0 30px rgba(56, 189, 248, 0.06);
+        0 25px 60px rgba(0, 0, 0, 0.22);
     }
 
     .project-top {
@@ -936,52 +966,50 @@
     }
 
     .project-tag {
-      color: #38bdf8;
-      font-size: 11px;
+      padding: 6px 10px;
+
+      color: #7dd3fc;
+      background: rgba(56, 189, 248, 0.07);
+
+      border: 1px solid rgba(56, 189, 248, 0.14);
+      border-radius: 999px;
+
+      font-size: 10px;
       font-weight: 800;
-      letter-spacing: 1px;
+
       text-transform: uppercase;
+      letter-spacing: 0.8px;
     }
 
     .project-arrow {
-      width: 32px;
-      height: 32px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
       color: #38bdf8;
-
-      background: rgba(56, 189, 248, 0.06);
-      border: 1px solid rgba(56, 189, 248, 0.10);
-
-      border-radius: 50%;
+      font-size: 20px;
     }
 
     .project-card h3 {
       color: #f8fafc;
-      font-size: 23px;
-      margin-bottom: 13px;
+      font-size: 22px;
+      margin-bottom: 12px;
     }
 
     .project-card p {
-      color: #8492a6;
+      color: #8291a5;
       font-size: 14px;
       line-height: 1.75;
+
+      margin-bottom: 25px;
     }
 
     .project-link {
       margin-top: auto;
-      padding-top: 25px;
 
-      color: #7dd3fc;
+      color: #38bdf8;
       font-size: 13px;
-      font-weight: 750;
+      font-weight: 800;
     }
 
     .project-link:hover {
-      color: #bae6fd;
+      color: #7dd3fc;
     }
 
     /* =========================================================
@@ -993,7 +1021,7 @@
         linear-gradient(
           180deg,
           transparent,
-          rgba(14, 165, 233, 0.025),
+          rgba(56, 189, 248, 0.025),
           transparent
         );
     }
@@ -1025,6 +1053,7 @@
       content: "";
 
       position: absolute;
+
       top: 0;
       left: 0;
       right: 0;
@@ -1059,24 +1088,26 @@
       color: #7dd3fc;
       background: rgba(56, 189, 248, 0.07);
 
-      border-radius: 7px;
+      border: 1px solid rgba(56, 189, 248, 0.13);
+      border-radius: 999px;
 
       font-size: 10px;
       font-weight: 800;
+
       text-transform: uppercase;
-      letter-spacing: 0.7px;
+      letter-spacing: 0.6px;
     }
 
     .metrics {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
     }
 
     .metric {
-      padding: 16px;
+      padding: 15px;
 
-      background: rgba(2, 6, 23, 0.35);
+      background: rgba(15, 23, 42, 0.42);
       border: 1px solid rgba(148, 163, 184, 0.07);
 
       border-radius: 11px;
@@ -1097,6 +1128,180 @@
     .metric strong em {
       color: #38bdf8;
       font-style: normal;
+    }
+
+    /* =========================================================
+       SEO PERFORMANCE OVERVIEW
+    ========================================================= */
+
+    .performance-section {
+      padding-top: 60px;
+    }
+
+    .performance-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .performance-card {
+      display: flex;
+      flex-direction: column;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(17, 27, 45, 0.95),
+          rgba(8, 14, 26, 0.88)
+        );
+
+      border: 1px solid rgba(148, 163, 184, 0.10);
+      border-radius: 20px;
+
+      overflow: hidden;
+
+      transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+
+    .performance-card:hover {
+      transform: translateY(-8px);
+
+      border-color: rgba(56, 189, 248, 0.35);
+
+      box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    .performance-image-wrap {
+      position: relative;
+      padding: 12px;
+
+      background:
+        rgba(2, 6, 23, 0.8);
+
+      border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+    }
+
+    .performance-image {
+      width: 100%;
+      height: 205px;
+
+      object-fit: cover;
+      object-position: top;
+
+      border-radius: 11px;
+
+      border: 1px solid rgba(148, 163, 184, 0.10);
+
+      background: #020617;
+    }
+
+    .performance-content {
+      padding: 25px;
+    }
+
+    .performance-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 10px;
+
+      margin-bottom: 12px;
+    }
+
+    .performance-top h3 {
+      color: #f8fafc;
+      font-size: 20px;
+    }
+
+    .performance-badge {
+      padding: 5px 9px;
+
+      color: #7dd3fc;
+      background: rgba(56, 189, 248, 0.07);
+
+      border: 1px solid rgba(56, 189, 248, 0.13);
+      border-radius: 999px;
+
+      font-size: 9px;
+      font-weight: 800;
+
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+
+      white-space: nowrap;
+    }
+
+    .performance-content p {
+      color: #8291a5;
+      font-size: 13px;
+      line-height: 1.7;
+
+      margin-bottom: 20px;
+    }
+
+    .performance-metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+
+      margin-bottom: 20px;
+    }
+
+    .performance-metric {
+      padding: 12px;
+
+      background: rgba(15, 23, 42, 0.5);
+
+      border: 1px solid rgba(148, 163, 184, 0.07);
+      border-radius: 10px;
+    }
+
+    .performance-metric span {
+      display: block;
+
+      color: #64748b;
+      font-size: 10px;
+
+      margin-bottom: 3px;
+    }
+
+    .performance-metric strong {
+      color: #e2e8f0;
+      font-size: 13px;
+    }
+
+    .performance-metric strong span {
+      display: inline;
+      color: #38bdf8;
+      font-size: inherit;
+    }
+
+    .performance-link {
+      color: #38bdf8;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .performance-link:hover {
+      color: #7dd3fc;
+    }
+
+    .evidence-note {
+      max-width: 760px;
+
+      margin: 28px auto 0;
+
+      color: #64748b;
+
+      text-align: center;
+
+      font-size: 12px;
+      line-height: 1.75;
     }
 
     /* =========================================================
@@ -1122,6 +1327,7 @@
 
     .pricing-card {
       position: relative;
+
       display: flex;
       flex-direction: column;
 
@@ -1166,6 +1372,7 @@
       content: "";
 
       position: absolute;
+
       top: 0;
       left: 0;
       right: 0;
@@ -1195,6 +1402,7 @@
 
       font-size: 10px;
       font-weight: 850;
+
       letter-spacing: 0.8px;
       text-transform: uppercase;
     }
@@ -1281,6 +1489,7 @@
       padding-left: 25px;
 
       color: #aab7c8;
+
       font-size: 13px;
       line-height: 1.55;
     }
@@ -1289,6 +1498,7 @@
       content: "✓";
 
       position: absolute;
+
       left: 0;
       top: 0;
 
@@ -1310,6 +1520,7 @@
       color: #64748b;
 
       text-align: center;
+
       font-size: 12px;
       line-height: 1.7;
     }
@@ -1321,7 +1532,9 @@
     .expertise-box {
       display: grid;
       grid-template-columns: 1fr auto;
+
       align-items: center;
+
       gap: 40px;
 
       padding: 38px;
@@ -1345,6 +1558,7 @@
 
     .expertise-box p {
       max-width: 750px;
+
       color: #91a0b4;
       font-size: 15px;
       line-height: 1.8;
@@ -1365,6 +1579,7 @@
       content: "";
 
       position: absolute;
+
       top: 0;
       bottom: 0;
       left: 9px;
@@ -1373,52 +1588,67 @@
 
       background:
         linear-gradient(
-          #38bdf8,
-          rgba(56, 189, 248, 0.05)
+          to bottom,
+          transparent,
+          rgba(56, 189, 248, 0.35),
+          transparent
         );
     }
 
     .timeline-item {
       position: relative;
-      padding: 0 0 42px 45px;
+
+      padding-left: 45px;
+      margin-bottom: 45px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
     }
 
     .timeline-dot {
       position: absolute;
-      top: 4px;
+
+      top: 5px;
       left: 3px;
 
       width: 13px;
       height: 13px;
 
-      border-radius: 50%;
       background: #38bdf8;
 
-      border: 3px solid #07101e;
+      border-radius: 50%;
 
       box-shadow:
-        0 0 0 1px rgba(56, 189, 248, 0.45),
-        0 0 18px rgba(56, 189, 248, 0.30);
+        0 0 0 5px rgba(56, 189, 248, 0.08),
+        0 0 20px rgba(56, 189, 248, 0.35);
     }
 
     .timeline-year {
       color: #38bdf8;
+
       font-size: 11px;
       font-weight: 800;
+
       text-transform: uppercase;
       letter-spacing: 1.5px;
-      margin-bottom: 5px;
+
+      margin-bottom: 7px;
     }
 
     .timeline-item h3 {
       color: #f8fafc;
+
       font-size: 20px;
-      margin-bottom: 7px;
+
+      margin-bottom: 8px;
     }
 
     .timeline-item p {
       max-width: 720px;
-      color: #7f8da1;
+
+      color: #8291a5;
+
       font-size: 14px;
       line-height: 1.75;
     }
@@ -1434,56 +1664,65 @@
     }
 
     .education-card {
-      padding: 25px;
+      padding: 27px;
 
       background: rgba(12, 20, 35, 0.72);
+
       border: 1px solid rgba(148, 163, 184, 0.10);
       border-radius: 16px;
+
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .education-card:hover {
+      transform: translateY(-6px);
+
+      border-color: rgba(56, 189, 248, 0.30);
     }
 
     .education-card small {
       color: #38bdf8;
+
       font-size: 10px;
       font-weight: 800;
+
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
     }
 
     .education-card h3 {
       color: #f8fafc;
-      font-size: 17px;
-      line-height: 1.45;
-      margin: 12px 0 8px;
+
+      font-size: 18px;
+
+      margin: 12px 0 9px;
     }
 
     .education-card p {
       color: #718096;
+
       font-size: 13px;
+      line-height: 1.7;
     }
 
     /* =========================================================
        CTA
     ========================================================= */
 
-    .cta {
-      padding-bottom: 110px;
-    }
-
     .cta-box {
-      position: relative;
-      overflow: hidden;
+      padding: 65px 45px;
 
       text-align: center;
 
-      padding: 65px 30px;
-
       background:
         radial-gradient(
-          circle at center,
+          circle at 50% 0%,
           rgba(56, 189, 248, 0.12),
-          transparent 60%
+          transparent 55%
         ),
-        rgba(10, 18, 32, 0.85);
+        rgba(12, 20, 35, 0.72);
 
       border: 1px solid rgba(56, 189, 248, 0.14);
       border-radius: 24px;
@@ -1491,24 +1730,32 @@
 
     .cta-box h2 {
       color: #f8fafc;
-      font-size: clamp(32px, 5vw, 48px);
-      letter-spacing: -1.5px;
-      margin-bottom: 12px;
+
+      font-size: clamp(34px, 5vw, 50px);
+      line-height: 1.05;
+
+      letter-spacing: -2px;
+
+      margin-bottom: 17px;
     }
 
     .cta-box p {
-      max-width: 620px;
-      margin: 0 auto 28px;
+      max-width: 700px;
 
-      color: #8b99ac;
+      margin: 0 auto 25px;
+
+      color: #8291a5;
+
       font-size: 15px;
+      line-height: 1.8;
     }
 
     .cta-actions {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 12px;
+
+      gap: 10px;
     }
 
     /* =========================================================
@@ -1518,37 +1765,53 @@
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
+      gap: 14px;
     }
 
     .contact-card {
-      text-align: center;
-      padding: 24px;
+      padding: 22px;
 
-      background: rgba(12, 20, 35, 0.65);
-      border: 1px solid rgba(148, 163, 184, 0.09);
+      background: rgba(12, 20, 35, 0.72);
 
+      border: 1px solid rgba(148, 163, 184, 0.10);
       border-radius: 15px;
+
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+
+      border-color: rgba(56, 189, 248, 0.30);
     }
 
     .contact-card small {
       display: block;
+
       color: #38bdf8;
-      font-size: 11px;
+
+      font-size: 10px;
       font-weight: 800;
+
       text-transform: uppercase;
       letter-spacing: 1px;
-      margin-bottom: 8px;
+
+      margin-bottom: 7px;
     }
 
     .contact-card a {
-      color: #dbeafe;
-      font-size: 14px;
+      color: #cbd5e1;
+
+      font-size: 13px;
       font-weight: 650;
+
+      word-break: break-word;
     }
 
     .contact-card a:hover {
-      color: #38bdf8;
+      color: #7dd3fc;
     }
 
     /* =========================================================
@@ -1580,8 +1843,6 @@
         0 10px 30px rgba(0, 0, 0, 0.28),
         0 0 0 5px rgba(37, 211, 102, 0.08);
 
-      font-size: 27px;
-
       transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
@@ -1605,15 +1866,18 @@
       padding: 8px 12px;
 
       color: #e5edf7;
+
       background: rgba(9, 15, 29, 0.95);
 
       border: 1px solid rgba(148, 163, 184, 0.12);
+
       border-radius: 8px;
 
       font-size: 12px;
       font-weight: 700;
 
       opacity: 0;
+
       pointer-events: none;
 
       transform: translateX(5px);
@@ -1644,42 +1908,56 @@
       border-top: 1px solid rgba(148, 163, 184, 0.08);
 
       color: #536174;
+
       text-align: center;
+
       font-size: 12px;
-    }
-
-    /* =========================================================
-       MOBILE MENU
-    ========================================================= */
-
-    .menu-toggle {
-      display: none;
-
-      width: 42px;
-      height: 42px;
-
-      align-items: center;
-      justify-content: center;
-
-      color: #cbd5e1;
-      background: rgba(15, 23, 42, 0.7);
-
-      border: 1px solid rgba(148, 163, 184, 0.12);
-      border-radius: 10px;
-
-      cursor: pointer;
     }
 
     /* =========================================================
        RESPONSIVE
     ========================================================= */
 
+    @media (max-width: 1000px) {
+
+      .nav-links {
+        gap: 2px;
+      }
+
+      .nav-links a {
+        padding: 8px 9px;
+        font-size: 12px;
+      }
+
+      .hero-grid {
+        gap: 45px;
+      }
+
+      .performance-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .education-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     @media (max-width: 900px) {
 
       .hero-grid {
         grid-template-columns: 1fr;
+
         text-align: center;
-        gap: 45px;
       }
 
       .hero-copy {
@@ -1721,12 +1999,6 @@
         min-height: 290px;
       }
 
-      .pricing-grid {
-        grid-template-columns: 1fr;
-        max-width: 600px;
-        margin: 0 auto;
-      }
-
       .expertise-box {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1734,14 +2006,6 @@
 
       .expertise-box .btn {
         justify-self: center;
-      }
-
-      .education-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-grid {
-        grid-template-columns: repeat(2, 1fr);
       }
     }
 
@@ -1761,6 +2025,7 @@
 
       .nav-links {
         display: none;
+
         width: 100%;
 
         flex-direction: column;
@@ -1769,54 +2034,26 @@
         padding-top: 10px;
       }
 
-      .nav-links.open {
+      .nav-links.active {
         display: flex;
       }
 
       .nav-links a {
-        text-align: center;
+        width: 100%;
+        padding: 11px 12px;
       }
 
       .hero {
-        min-height: auto;
-        padding: 65px 0 50px;
+        padding: 65px 0 45px;
       }
 
       .hero h1 {
-        font-size: clamp(42px, 13vw, 62px);
+        font-size: 48px;
         letter-spacing: -2.5px;
-      }
-
-      .hero-role {
-        font-size: 19px;
       }
 
       .hero-description {
         font-size: 15px;
-        line-height: 1.7;
-      }
-
-      .hero-actions {
-        justify-content: center;
-      }
-
-      .btn {
-        min-height: 45px;
-        padding: 0 16px;
-        font-size: 13px;
-      }
-
-      .floating-card {
-        display: none;
-      }
-
-      .profile-wrapper {
-        width: 240px;
-      }
-
-      .profile-photo {
-        width: 165px;
-        height: 165px;
       }
 
       .stats {
@@ -1868,6 +2105,14 @@
         gap: 10px;
       }
 
+      .performance-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .performance-image {
+        height: 220px;
+      }
+
       .pricing-card {
         padding: 28px 24px;
       }
@@ -1915,6 +2160,10 @@
         width: 91%;
       }
 
+      .hero h1 {
+        font-size: 42px;
+      }
+
       .stats-grid {
         grid-template-columns: 1fr 1fr;
       }
@@ -1938,6 +2187,10 @@
 
       .pricing-price strong {
         font-size: 36px;
+      }
+
+      .performance-image {
+        height: 190px;
       }
     }
 
@@ -1964,6 +2217,7 @@
         transition-duration: 0.01ms !important;
       }
     }
+
   </style>
 </head>
 
@@ -2010,6 +2264,10 @@
           </li>
 
           <li>
+            <a href="#performance">Overview</a>
+          </li>
+
+          <li>
             <a href="#pricing">Pricing</a>
           </li>
 
@@ -2018,7 +2276,9 @@
           </li>
 
           <li>
-            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <a href="#contact" class="nav-cta">
+              Let's Talk
+            </a>
           </li>
 
         </ul>
@@ -2049,13 +2309,14 @@
             </div>
 
             <h1>
-              Turning Search
-              <span class="gradient-text">Visibility</span>
-              Into Growth.
+              Umer Farooq Khan
+              <span class="gradient-text">
+                SEO Expert.
+              </span>
             </h1>
 
             <div class="hero-role">
-              Umer Farooq Khan
+              Technical SEO · Local SEO · Organic Growth
             </div>
 
             <p class="hero-description">
@@ -2067,8 +2328,18 @@
 
             <div class="hero-actions">
 
-              <a href="#projects" class="btn btn-primary">
-                View My Work →
+              <a
+                href="#performance"
+                class="btn btn-primary"
+              >
+                View SEO Results →
+              </a>
+
+              <a
+                href="#projects"
+                class="btn"
+              >
+                View My Work
               </a>
 
               <a
@@ -2139,22 +2410,30 @@
 
           <div class="stat-card">
             <div class="stat-number">3+</div>
-            <div class="stat-label">Years of SEO Experience</div>
+            <div class="stat-label">
+              Years of SEO Experience
+            </div>
           </div>
 
           <div class="stat-card">
             <div class="stat-number">8+</div>
-            <div class="stat-label">SEO Projects Completed</div>
+            <div class="stat-label">
+              SEO Projects Completed
+            </div>
           </div>
 
           <div class="stat-card">
             <div class="stat-number">3+</div>
-            <div class="stat-label">Industries Worked With</div>
+            <div class="stat-label">
+              Industries Worked With
+            </div>
           </div>
 
           <div class="stat-card">
             <div class="stat-number">9+</div>
-            <div class="stat-label">SEO Tools Mastered</div>
+            <div class="stat-label">
+              SEO Tools Mastered
+            </div>
           </div>
 
         </div>
@@ -2174,17 +2453,21 @@
 
         <div class="section-header">
 
-          <span class="section-kicker">01 / About</span>
+          <span class="section-kicker">
+            01 / About
+          </span>
 
           <h2 class="section-title">
             SEO strategy built around
-            <span class="gradient-text">real growth.</span>
+            <span class="gradient-text">
+              real growth.
+            </span>
           </h2>
 
           <p class="section-description">
             I combine technical SEO, search data and practical
-            optimization to build strategies that are designed
-            for sustainable organic growth.
+            optimisation to build strategies designed for
+            sustainable organic growth.
           </p>
 
         </div>
@@ -2206,9 +2489,9 @@
               <strong>
                 Technical SEO, Local SEO, On-Page SEO, Off-Page SEO,
                 Keyword Research, SEO Audits, Content Strategy,
-                Internal Linking, Schema Markup
+                Internal Linking and Schema Markup
               </strong>
-              and <strong>Core Web Vitals</strong>.
+              together with <strong>Core Web Vitals</strong>.
             </p>
 
             <p>
@@ -2226,35 +2509,78 @@
             <div class="quick-list">
 
               <div class="quick-item">
-                <div class="quick-icon">01</div>
-                <div>
-                  <strong>Technical SEO</strong>
-                  <span>Crawlability, indexing & performance</span>
+
+                <div class="quick-icon">
+                  01
                 </div>
+
+                <div>
+                  <strong>
+                    Technical SEO
+                  </strong>
+
+                  <span>
+                    Crawling, indexing and site structure
+                  </span>
+                </div>
+
               </div>
 
-              <div class="quick-item">
-                <div class="quick-icon">02</div>
-                <div>
-                  <strong>Local SEO</strong>
-                  <span>Visibility for local businesses</span>
-                </div>
-              </div>
 
               <div class="quick-item">
-                <div class="quick-icon">03</div>
-                <div>
-                  <strong>Content Strategy</strong>
-                  <span>Search-focused content planning</span>
+
+                <div class="quick-icon">
+                  02
                 </div>
+
+                <div>
+                  <strong>
+                    Local SEO
+                  </strong>
+
+                  <span>
+                    Location-based search visibility
+                  </span>
+                </div>
+
               </div>
 
+
               <div class="quick-item">
-                <div class="quick-icon">04</div>
-                <div>
-                  <strong>AEO & GEO</strong>
-                  <span>Optimizing for AI-powered search</span>
+
+                <div class="quick-icon">
+                  03
                 </div>
+
+                <div>
+                  <strong>
+                    Content Strategy
+                  </strong>
+
+                  <span>
+                    Search intent and topical coverage
+                  </span>
+                </div>
+
+              </div>
+
+
+              <div class="quick-item">
+
+                <div class="quick-icon">
+                  04
+                </div>
+
+                <div>
+                  <strong>
+                    AEO & GEO
+                  </strong>
+
+                  <span>
+                    Optimising for AI-powered search
+                  </span>
+                </div>
+
               </div>
 
             </div>
@@ -2278,11 +2604,15 @@
 
         <div class="section-header center">
 
-          <span class="section-kicker">02 / Expertise</span>
+          <span class="section-kicker">
+            02 / Expertise
+          </span>
 
           <h2 class="section-title">
             SEO skills that
-            <span class="gradient-text">move the needle.</span>
+            <span class="gradient-text">
+              move the needle.
+            </span>
           </h2>
 
           <p class="section-description">
@@ -2296,56 +2626,145 @@
         <div class="skills-grid">
 
           <div class="skill-card">
-            <div class="skill-number">01 — TECHNICAL</div>
-            <h3>Technical SEO</h3>
+            <div class="skill-number">
+              01 — TECHNICAL
+            </div>
+
+            <h3>
+              Technical SEO
+            </h3>
+
             <p>
               Technical audits, crawling, indexing, site structure,
               Core Web Vitals and technical problem solving.
             </p>
           </div>
 
+
           <div class="skill-card">
-            <div class="skill-number">02 — ON-PAGE</div>
-            <h3>On-Page SEO</h3>
+            <div class="skill-number">
+              02 — ON-PAGE
+            </div>
+
+            <h3>
+              On-Page SEO
+            </h3>
+
             <p>
-              Optimizing titles, headings, content, internal links,
+              Optimising titles, headings, content, internal links,
               entities and page-level search relevance.
             </p>
           </div>
 
+
           <div class="skill-card">
-            <div class="skill-number">03 — LOCAL</div>
-            <h3>Local SEO</h3>
+            <div class="skill-number">
+              03 — LOCAL
+            </div>
+
+            <h3>
+              Local SEO
+            </h3>
+
             <p>
               Local search strategies designed to improve visibility
               for location-based businesses.
             </p>
           </div>
 
+
           <div class="skill-card">
-            <div class="skill-number">04 — RESEARCH</div>
-            <h3>Keyword Research</h3>
+            <div class="skill-number">
+              04 — RESEARCH
+            </div>
+
+            <h3>
+              Keyword Research
+            </h3>
+
             <p>
               Finding relevant search opportunities based on intent,
               competition, relevance and business goals.
             </p>
           </div>
 
+
           <div class="skill-card">
-            <div class="skill-number">05 — CONTENT</div>
-            <h3>Content Strategy</h3>
+            <div class="skill-number">
+              05 — CONTENT
+            </div>
+
+            <h3>
+              Content Strategy
+            </h3>
+
             <p>
               Building topic-focused content strategies that align
               search intent with business objectives.
             </p>
           </div>
 
+
           <div class="skill-card">
-            <div class="skill-number">06 — ANALYSIS</div>
-            <h3>SEO Audits</h3>
+            <div class="skill-number">
+              06 — ANALYSIS
+            </div>
+
+            <h3>
+              SEO Audits
+            </h3>
+
             <p>
-              Identifying technical, content and visibility issues
-              and turning data into actionable SEO priorities.
+              Identifying technical, content, indexing and
+              search-performance opportunities.
+            </p>
+          </div>
+
+
+          <div class="skill-card">
+            <div class="skill-number">
+              07 — STRUCTURE
+            </div>
+
+            <h3>
+              Internal Linking
+            </h3>
+
+            <p>
+              Building logical internal linking structures that
+              improve navigation, relevance and crawlability.
+            </p>
+          </div>
+
+
+          <div class="skill-card">
+            <div class="skill-number">
+              08 — SCHEMA
+            </div>
+
+            <h3>
+              Schema Markup
+            </h3>
+
+            <p>
+              Implementing structured data to help search engines
+              understand pages, entities and services.
+            </p>
+          </div>
+
+
+          <div class="skill-card">
+            <div class="skill-number">
+              09 — SEARCH
+            </div>
+
+            <h3>
+              AEO & GEO
+            </h3>
+
+            <p>
+              Optimising content for answer engines, AI search
+              experiences and generative search visibility.
             </p>
           </div>
 
@@ -2366,11 +2785,15 @@
 
         <div class="section-header center">
 
-          <span class="section-kicker">03 / Toolkit</span>
+          <span class="section-kicker">
+            03 / SEO Tools
+          </span>
 
           <h2 class="section-title">
-            Tools behind the
-            <span class="gradient-text">strategy.</span>
+            Tools I use for
+            <span class="gradient-text">
+              SEO analysis.
+            </span>
           </h2>
 
         </div>
@@ -2378,18 +2801,41 @@
 
         <div class="tools-wrap">
 
-          <span class="tool">Google Search Console</span>
-          <span class="tool">Google Analytics 4</span>
-          <span class="tool">Semrush</span>
-          <span class="tool">Ahrefs</span>
-          <span class="tool">Screaming Frog</span>
-          <span class="tool">Sitebulb</span>
-          <span class="tool">Google Keyword Planner</span>
-          <span class="tool">Rank Math</span>
-          <span class="tool">PageSpeed Insights</span>
-          <span class="tool">Bing Webmaster Tools</span>
-          <span class="tool">Looker Studio</span>
-          <span class="tool">ChatGPT</span>
+          <span class="tool">
+            Google Search Console
+          </span>
+
+          <span class="tool">
+            Google Analytics
+          </span>
+
+          <span class="tool">
+            Semrush
+          </span>
+
+          <span class="tool">
+            Ahrefs
+          </span>
+
+          <span class="tool">
+            Screaming Frog
+          </span>
+
+          <span class="tool">
+            Sitebulb
+          </span>
+
+          <span class="tool">
+            Google Keyword Planner
+          </span>
+
+          <span class="tool">
+            Rank Math
+          </span>
+
+          <span class="tool">
+            Google PageSpeed Insights
+          </span>
 
         </div>
 
@@ -2408,23 +2854,66 @@
 
         <div class="section-header">
 
-          <span class="section-kicker">04 / Selected Work</span>
+          <span class="section-kicker">
+            04 / Selected Work
+          </span>
 
           <h2 class="section-title">
             SEO projects with
-            <span class="gradient-text">real outcomes.</span>
+            <span class="gradient-text">
+              real outcomes.
+            </span>
           </h2>
 
           <p class="section-description">
-            A selection of SEO projects covering local search,
-            technical optimization, keyword strategy and
-            organic search growth.
+            Explore detailed SEO case studies covering Technical SEO,
+            Local SEO, keyword research, content strategy and
+            Google Search performance.
           </p>
 
         </div>
 
 
         <div class="projects-grid">
+
+          <!-- INSPIRE LONDON COLLEGE -->
+
+          <article class="project-card">
+
+            <div class="project-top">
+
+              <span class="project-tag">
+                Education SEO
+              </span>
+
+              <span class="project-arrow">
+                ↗
+              </span>
+
+            </div>
+
+            <h3>
+              Inspire London College
+            </h3>
+
+            <p>
+              SEO case study focused on Technical SEO, keyword research,
+              On-Page SEO, content strategy, internal linking,
+              schema optimisation and organic search performance.
+            </p>
+
+            <a
+              href="inspire-london-college.html"
+              class="project-link"
+              aria-label="View Inspire London College SEO case study"
+            >
+              View Case Study →
+            </a>
+
+          </article>
+
+
+          <!-- FLOWER PALACE -->
 
           <article class="project-card">
 
@@ -2440,23 +2929,28 @@
 
             </div>
 
-            <h3>Flower Palace</h3>
+            <h3>
+              Flower Palace
+            </h3>
 
             <p>
               Local SEO case study focused on keyword research,
-              on-page optimization, technical SEO, content strategy
-              and improving organic search visibility.
+              On-Page SEO, Technical SEO, content strategy and
+              improving organic search visibility.
             </p>
 
             <a
               href="theflowershop.html"
               class="project-link"
+              aria-label="View Flower Palace SEO case study"
             >
               View Case Study →
             </a>
 
           </article>
 
+
+          <!-- TYRE EXPRESS -->
 
           <article class="project-card">
 
@@ -2472,49 +2966,20 @@
 
             </div>
 
-            <h3>Pestigo</h3>
-
-            <p>
-              SEO case study focused on Local SEO, technical SEO,
-              keyword research, on-page optimization, content strategy
-              and increasing organic search performance.
-            </p>
-
-            <a
-              href="pestigo.html"
-              class="project-link"
-            >
-              View Case Study →
-            </a>
-
-          </article>
-
-
-          <article class="project-card">
-
-            <div class="project-top">
-
-              <span class="project-tag">
-                Local SEO
-              </span>
-
-              <span class="project-arrow">
-                ↗
-              </span>
-
-            </div>
-
-            <h3>Tyre Express 24/7</h3>
+            <h3>
+              Tyre Express 24/7
+            </h3>
 
             <p>
               SEO case study for a newly launched mobile tyre fitting
               business, covering Local SEO, Technical SEO, keyword
-              research, on-page optimization and content strategy.
+              research, On-Page SEO and content strategy.
             </p>
 
             <a
               href="tyreexpress247.html"
               class="project-link"
+              aria-label="View Tyre Express 24/7 SEO case study"
             >
               View Case Study →
             </a>
@@ -2538,16 +3003,21 @@
 
         <div class="section-header center">
 
-          <span class="section-kicker">05 / SEO Results</span>
+          <span class="section-kicker">
+            05 / SEO Results
+          </span>
 
           <h2 class="section-title">
             Search performance,
-            <span class="gradient-text">measured.</span>
+            <span class="gradient-text">
+              measured.
+            </span>
           </h2>
 
           <p class="section-description">
-            Selected Google Search Console results showing changes
-            in clicks, impressions, CTR and average search position.
+            Selected Google Search Console results showing
+            changes in clicks, impressions, CTR and average
+            search position.
           </p>
 
         </div>
@@ -2555,14 +3025,18 @@
 
         <div class="results-grid">
 
+          <!-- INSPIRE -->
+
           <article class="result-card">
 
             <div class="result-header">
 
-              <h3>Flower Palace</h3>
+              <h3>
+                Inspire London College
+              </h3>
 
               <span class="result-label">
-                Growth
+                GSC Results
               </span>
 
             </div>
@@ -2570,28 +3044,103 @@
             <div class="metrics">
 
               <div class="metric">
-                <span>Organic Clicks</span>
+                <span>
+                  Organic Clicks
+                </span>
+
+                <strong>
+                  26.4K <em>→ 35.8K</em>
+                </strong>
+              </div>
+
+              <div class="metric">
+                <span>
+                  Impressions
+                </span>
+
+                <strong>
+                  3.24M <em>→ 5.59M</em>
+                </strong>
+              </div>
+
+              <div class="metric">
+                <span>
+                  CTR
+                </span>
+
+                <strong>
+                  0.6% <em>→ 0.8%</em>
+                </strong>
+              </div>
+
+              <div class="metric">
+                <span>
+                  Average Position
+                </span>
+
+                <strong>
+                  27.6 <em>→ 10.2</em>
+                </strong>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- FLOWER PALACE -->
+
+          <article class="result-card">
+
+            <div class="result-header">
+
+              <h3>
+                Flower Palace
+              </h3>
+
+              <span class="result-label">
+                GSC Results
+              </span>
+
+            </div>
+
+            <div class="metrics">
+
+              <div class="metric">
+                <span>
+                  Organic Clicks
+                </span>
+
                 <strong>
                   677 <em>→ 851</em>
                 </strong>
               </div>
 
               <div class="metric">
-                <span>Impressions</span>
+                <span>
+                  Impressions
+                </span>
+
                 <strong>
                   35.6K <em>→ 55.1K</em>
                 </strong>
               </div>
 
               <div class="metric">
-                <span>CTR</span>
+                <span>
+                  CTR
+                </span>
+
                 <strong>
                   1.9% <em>→ 1.5%</em>
                 </strong>
               </div>
 
               <div class="metric">
-                <span>Average Position</span>
+                <span>
+                  Average Position
+                </span>
+
                 <strong>
                   18 <em>→ 8.2</em>
                 </strong>
@@ -2602,14 +3151,18 @@
           </article>
 
 
+          <!-- TYRE EXPRESS -->
+
           <article class="result-card">
 
             <div class="result-header">
 
-              <h3>Pestigo</h3>
+              <h3>
+                Tyre Express 24/7
+              </h3>
 
               <span class="result-label">
-                Growth
+                Early Results
               </span>
 
             </div>
@@ -2617,30 +3170,42 @@
             <div class="metrics">
 
               <div class="metric">
-                <span>Organic Clicks</span>
+                <span>
+                  Organic Clicks
+                </span>
+
                 <strong>
-                  1.17K <em>→ 1.66K</em>
+                  <em>357</em>
                 </strong>
               </div>
 
               <div class="metric">
-                <span>Impressions</span>
+                <span>
+                  Impressions
+                </span>
+
                 <strong>
-                  263K <em>→ 442K</em>
+                  <em>14.7K</em>
                 </strong>
               </div>
 
               <div class="metric">
-                <span>Average Position</span>
+                <span>
+                  CTR
+                </span>
+
                 <strong>
-                  44.5 <em>→ 25</em>
+                  <em>2.4%</em>
                 </strong>
               </div>
 
               <div class="metric">
-                <span>Search Visibility</span>
+                <span>
+                  Average Position
+                </span>
+
                 <strong>
-                  <em>Improved</em>
+                  <em>15.8</em>
                 </strong>
               </div>
 
@@ -2656,20 +3221,391 @@
 
 
     <!-- =====================================================
-         PRICING
+         SEO PERFORMANCE OVERVIEW
     ====================================================== -->
 
-    <section id="pricing" class="pricing-section">
+    <section
+      id="performance"
+      class="performance-section"
+    >
 
       <div class="container">
 
         <div class="section-header center">
 
-          <span class="section-kicker">06 / SEO Pricing</span>
+          <span class="section-kicker">
+            06 / SEO Performance Overview
+          </span>
+
+          <h2 class="section-title">
+            See the
+            <span class="gradient-text">
+              search data.
+            </span>
+          </h2>
+
+          <p class="section-description">
+            Real Google Search Console screenshots from selected
+            SEO projects, supported by the performance figures
+            shown in each case study.
+          </p>
+
+        </div>
+
+
+        <div class="performance-grid">
+
+
+          <!-- =================================================
+               INSPIRE PERFORMANCE
+          ================================================== -->
+
+          <article class="performance-card">
+
+            <div class="performance-image-wrap">
+
+              <img
+                src="inspire-gsc-results.png"
+                alt="Inspire London College Google Search Console SEO performance"
+                class="performance-image"
+                loading="lazy"
+                width="900"
+                height="500"
+              />
+
+            </div>
+
+
+            <div class="performance-content">
+
+              <div class="performance-top">
+
+                <h3>
+                  Inspire London College
+                </h3>
+
+                <span class="performance-badge">
+                  Education SEO
+                </span>
+
+              </div>
+
+              <p>
+                Google Search Console data from the SEO campaign,
+                showing changes in organic clicks, impressions,
+                CTR and average position.
+              </p>
+
+
+              <div class="performance-metrics">
+
+                <div class="performance-metric">
+                  <span>
+                    Clicks
+                  </span>
+
+                  <strong>
+                    26.4K
+                    <span>→ 35.8K</span>
+                  </strong>
+                </div>
+
+
+                <div class="performance-metric">
+                  <span>
+                    Impressions
+                  </span>
+
+                  <strong>
+                    3.24M
+                    <span>→ 5.59M</span>
+                  </strong>
+                </div>
+
+
+                <div class="performance-metric">
+                  <span>
+                    CTR
+                  </span>
+
+                  <strong>
+                    0.6%
+                    <span>→ 0.8%</span>
+                  </strong>
+                </div>
+
+
+                <div class="performance-metric">
+                  <span>
+                    Position
+                  </span>
+
+                  <strong>
+                    27.6
+                    <span>→ 10.2</span>
+                  </strong>
+                </div>
+
+              </div>
+
+
+              <a
+                href="inspire-london-college.html"
+                class="performance-link"
+                aria-label="View full Inspire London College SEO case study"
+              >
+                View Full Case Study →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =================================================
+               FLOWER PALACE PERFORMANCE
+          ================================================== -->
+
+          <article class="performance-card">
+
+            <div class="performance-image-wrap">
+
+              <img
+                src="theflowershop-gsc-results.png"
+                alt="Flower Palace Google Search Console SEO performance"
+                class="performance-image"
+                loading="lazy"
+                width="900"
+                height="500"
+              />
+
+            </div>
+
+
+            <div class="performance-content">
+
+              <div class="performance-top">
+
+                <h3>
+                  Flower Palace
+                </h3>
+
+                <span class="performance-badge">
+                  Local SEO
+                </span>
+
+              </div>
+
+              <p>
+                Google Search Console data showing organic search
+                performance before and after the SEO campaign.
+              </p>
+
+
+              <div class="performance-metrics">
+
+                <div class="performance-metric">
+                  <span>
+                    Clicks
+                  </span>
+
+                  <strong>
+                    677
+                    <span>→ 851</span>
+                  </strong>
+                </div>
+
+
+                <div class="performance-metric">
+                  <span>
+                    Impressions
+                  </span>
+
+                  <strong>
+                    35.6K
+                    <span>→ 55.1K</span>
+                  </strong>
+                </div>
+
+
+                <div class="performance-metric">
+                  <span>
+                    CTR
+                  </span>
+
+                  <strong>
+                    1.9%
+                    <span>→ 1.5%</span>
+                  </strong>
+                </div>
+
+
+                <div class="performance-metric">
+                  <span>
+                    Position
+                  </span>
+
+                  <strong>
+                    18
+                    <span>→ 8.2</span>
+                  </strong>
+                </div>
+
+              </div>
+
+
+              <a
+                href="theflowershop.html"
+                class="performance-link"
+                aria-label="View full Flower Palace SEO case study"
+              >
+                View Full Case Study →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =================================================
+               TYRE EXPRESS PERFORMANCE
+          ================================================== -->
+
+          <article class="performance-card">
+
+            <div class="performance-image-wrap">
+
+              <img
+                src="tyreexpress247-gsc-results.png"
+                alt="Tyre Express 24/7 Google Search Console SEO performance"
+                class="performance-image"
+                loading="lazy"
+                width="900"
+                height="500"
+              />
+
+            </div>
+
+
+            <div class="performance-content">
+
+              <div class="performance-top">
+
+                <h3>
+                  Tyre Express 24/7
+                </h3>
+
+                <span class="performance-badge">
+                  Local SEO
+                </span>
+
+              </div>
+
+              <p>
+                Early Google Search Console performance from a newly
+                launched local business website during its initial
+                SEO campaign.
+              </p>
+
+
+              <div class="performance-metrics">
+
+                <div class="performance-metric">
+                  <span>
+                    Clicks
+                  </span>
+
+                  <strong>
+                    <span>357</span>
+                  </strong>
+                </div>
+
+
+                <div class="performance-metric">
+                  <span>
+                    Impressions
+                  </span>
+
+                  <strong>
+                    <span>14.7K</span>
+                  </strong>
+                </div>
+
+
+                <div class="performance-metric">
+                  <span>
+                    CTR
+                  </span>
+
+                  <strong>
+                    <span>2.4%</span>
+                  </strong>
+                </div>
+
+
+                <div class="performance-metric">
+                  <span>
+                    Position
+                  </span>
+
+                  <strong>
+                    <span>15.8</span>
+                  </strong>
+                </div>
+
+              </div>
+
+
+              <a
+                href="tyreexpress247.html"
+                class="performance-link"
+                aria-label="View full Tyre Express 24/7 SEO case study"
+              >
+                View Full Case Study →
+              </a>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+
+        <p class="evidence-note">
+          Performance figures are presented from the Google Search Console
+          data documented in the individual case studies. Tyre Express 24/7
+          is shown as early campaign performance rather than a before-and-after
+          comparison because it was a newly launched website.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PRICING
+    ====================================================== -->
+
+    <section
+      id="pricing"
+      class="pricing-section"
+    >
+
+      <div class="container">
+
+        <div class="section-header center">
+
+          <span class="section-kicker">
+            07 / SEO Pricing
+          </span>
 
           <h2 class="section-title">
             SEO plans built for
-            <span class="gradient-text">real growth.</span>
+            <span class="gradient-text">
+              real growth.
+            </span>
           </h2>
 
           <p class="section-description">
@@ -2683,7 +3619,8 @@
 
         <div class="pricing-grid">
 
-          <!-- STARTER SEO -->
+
+          <!-- STARTER -->
 
           <article class="pricing-card">
 
@@ -2700,6 +3637,7 @@
               and websites starting their organic growth journey.
             </p>
 
+
             <div class="pricing-price">
 
               <div class="pricing-price-main">
@@ -2714,34 +3652,52 @@
 
             </div>
 
+
             <div class="pricing-divider"></div>
+
 
             <ul class="pricing-features">
 
-              <li>SEO audit</li>
+              <li>
+                SEO audit
+              </li>
 
-              <li>Keyword research</li>
+              <li>
+                Keyword research
+              </li>
 
-              <li>On-Page SEO optimisation</li>
+              <li>
+                On-Page SEO optimisation
+              </li>
 
-              <li>Meta title and description optimisation</li>
+              <li>
+                Meta title and description optimisation
+              </li>
 
-              <li>Internal linking</li>
+              <li>
+                Internal linking
+              </li>
 
-              <li>Basic Technical SEO</li>
+              <li>
+                Basic Technical SEO
+              </li>
 
-              <li>Google Search Console monitoring</li>
+              <li>
+                Google Search Console monitoring
+              </li>
 
-              <li>Monthly SEO report</li>
+              <li>
+                Monthly SEO report
+              </li>
 
             </ul>
+
 
             <a
               href="https://wa.me/923068838148?text=Hi%20Umer%2C%20I%27m%20interested%20in%20your%20Starter%20SEO%20package.%20I%27d%20like%20to%20discuss%20my%20website%20and%20SEO%20requirements."
               class="btn btn-primary pricing-button"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Contact Umer about Starter SEO package on WhatsApp"
             >
               💬 Get Started on WhatsApp
             </a>
@@ -2749,12 +3705,12 @@
           </article>
 
 
-          <!-- GROWTH SEO -->
+          <!-- GROWTH -->
 
           <article class="pricing-card featured">
 
             <span class="pricing-badge">
-              Most Popular
+              Featured
             </span>
 
             <h3 class="pricing-name">
@@ -2762,9 +3718,10 @@
             </h3>
 
             <p class="pricing-description">
-              A complete SEO strategy for businesses
-              looking for consistent organic visibility and growth.
+              A complete SEO strategy for businesses looking
+              for consistent organic visibility and growth.
             </p>
+
 
             <div class="pricing-price">
 
@@ -2780,38 +3737,60 @@
 
             </div>
 
+
             <div class="pricing-divider"></div>
+
 
             <ul class="pricing-features">
 
-              <li>Everything in Starter SEO</li>
+              <li>
+                Everything in Starter SEO
+              </li>
 
-              <li>Advanced Technical SEO</li>
+              <li>
+                Advanced Technical SEO
+              </li>
 
-              <li>Comprehensive keyword research</li>
+              <li>
+                Comprehensive keyword research
+              </li>
 
-              <li>Competitor analysis</li>
+              <li>
+                Competitor analysis
+              </li>
 
-              <li>Content strategy</li>
+              <li>
+                Content strategy
+              </li>
 
-              <li>4 SEO-optimised articles per month</li>
+              <li>
+                4 SEO-optimised articles per month
+              </li>
 
-              <li>Schema markup optimisation</li>
+              <li>
+                Schema markup optimisation
+              </li>
 
-              <li>Advanced internal linking</li>
+              <li>
+                Advanced internal linking
+              </li>
 
-              <li>Google Search Console analysis</li>
+              <li>
+                Google Search Console analysis
+              </li>
 
-              <li>Monthly SEO reporting</li>
+              <li>
+                Monthly SEO reporting
+              </li>
 
             </ul>
+
 
             <a
               href="https://wa.me/923068838148?text=Hi%20Umer%2C%20I%27m%20interested%20in%20your%20Growth%20SEO%20package.%20I%27d%20like%20to%20discuss%20my%20website%20and%20SEO%20requirements."
               class="btn btn-primary pricing-button"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Contact Umer about Growth SEO package on WhatsApp"
             >
               💬 Choose Growth SEO
             </a>
@@ -2819,7 +3798,7 @@
           </article>
 
 
-          <!-- ADVANCED SEO -->
+          <!-- ADVANCED -->
 
           <article class="pricing-card">
 
@@ -2836,6 +3815,7 @@
               websites and businesses targeting larger markets.
             </p>
 
+
             <div class="pricing-price">
 
               <div class="pricing-price-main">
@@ -2850,38 +3830,60 @@
 
             </div>
 
+
             <div class="pricing-divider"></div>
+
 
             <ul class="pricing-features">
 
-              <li>Everything in Growth SEO</li>
+              <li>
+                Everything in Growth SEO
+              </li>
 
-              <li>Advanced Technical SEO</li>
+              <li>
+                Advanced Technical SEO
+              </li>
 
-              <li>Advanced competitor analysis</li>
+              <li>
+                Advanced competitor analysis
+              </li>
 
-              <li>8 SEO-optimised articles per month</li>
+              <li>
+                8 SEO-optimised articles per month
+              </li>
 
-              <li>Off-Page SEO strategy</li>
+              <li>
+                Off-Page SEO strategy
+              </li>
 
-              <li>Local SEO optimisation</li>
+              <li>
+                Local SEO optimisation
+              </li>
 
-              <li>Core Web Vitals optimisation</li>
+              <li>
+                Core Web Vitals optimisation
+              </li>
 
-              <li>Advanced schema implementation</li>
+              <li>
+                Advanced schema implementation
+              </li>
 
-              <li>Content gap analysis</li>
+              <li>
+                Content gap analysis
+              </li>
 
-              <li>Detailed monthly SEO reporting</li>
+              <li>
+                Detailed monthly SEO reporting
+              </li>
 
             </ul>
+
 
             <a
               href="https://wa.me/923068838148?text=Hi%20Umer%2C%20I%27m%20interested%20in%20your%20Advanced%20SEO%20package.%20I%27d%20like%20to%20discuss%20my%20website%20and%20SEO%20requirements."
               class="btn btn-primary pricing-button"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Contact Umer about Advanced SEO package on WhatsApp"
             >
               💬 Contact Me on WhatsApp
             </a>
@@ -2895,7 +3897,7 @@
           Prices are shown in USD and PKR. PKR prices are fixed package
           prices for this portfolio and may be customised based on
           website size, competition, target locations, industry and
-          SEO requirements. Contact me on WhatsApp for a tailored SEO proposal.
+          SEO requirements.
         </p>
 
       </div>
@@ -2907,7 +3909,7 @@
          EXPERTISE
     ====================================================== -->
 
-    <section id="expertise">
+    <section>
 
       <div class="container">
 
@@ -2916,17 +3918,18 @@
           <div>
 
             <h3>
-              What I specialize in
+              What I specialise in
             </h3>
 
             <p>
               Technical SEO, Local SEO, SEO Audits, Keyword Research,
               On-Page SEO, Content Strategy, Schema Markup, Core Web
-              Vitals and search performance optimization for businesses
+              Vitals and search performance optimisation for businesses
               worldwide.
             </p>
 
           </div>
+
 
           <a
             href="#skills"
@@ -2952,11 +3955,15 @@
 
         <div class="section-header center">
 
-          <span class="section-kicker">07 / Journey</span>
+          <span class="section-kicker">
+            08 / Journey
+          </span>
 
           <h2 class="section-title">
             From learning SEO to
-            <span class="gradient-text">leading SEO.</span>
+            <span class="gradient-text">
+              leading SEO.
+            </span>
           </h2>
 
           <p class="section-description">
@@ -2969,6 +3976,7 @@
 
         <div class="timeline">
 
+
           <div class="timeline-item">
 
             <span class="timeline-dot"></span>
@@ -2977,7 +3985,9 @@
               Beginning
             </div>
 
-            <h3>Started Learning SEO</h3>
+            <h3>
+              Started Learning SEO
+            </h3>
 
             <p>
               Built a strong foundation in Search Engine Optimization,
@@ -2996,12 +4006,14 @@
               Experience
             </div>
 
-            <h3>SEO Executive</h3>
+            <h3>
+              SEO Executive
+            </h3>
 
             <p>
               Worked on Technical SEO, On-Page SEO, Keyword Research,
-              SEO Audits, Content Optimization, Internal Linking and
-              website performance improvements.
+              SEO Audits, Content Optimisation, Internal Linking
+              and website performance improvements.
             </p>
 
           </div>
@@ -3015,7 +4027,9 @@
               Growth
             </div>
 
-            <h3>SEO Expert</h3>
+            <h3>
+              SEO Expert
+            </h3>
 
             <p>
               Worked on SEO projects across education, healthcare,
@@ -3035,16 +4049,19 @@
               Leadership
             </div>
 
-            <h3>SEO Team Lead</h3>
+            <h3>
+              SEO Team Lead
+            </h3>
 
             <p>
-              Led SEO activities, developed optimization strategies,
+              Led SEO activities, developed optimisation strategies,
               reviewed SEO implementation and supported team members
-              with technical SEO, keyword research, content strategy
+              with Technical SEO, keyword research, content strategy
               and SEO workflows.
             </p>
 
           </div>
+
 
         </div>
 
@@ -3063,11 +4080,15 @@
 
         <div class="section-header center">
 
-          <span class="section-kicker">08 / Background</span>
+          <span class="section-kicker">
+            09 / Background
+          </span>
 
           <h2 class="section-title">
             Education &
-            <span class="gradient-text">certifications.</span>
+            <span class="gradient-text">
+              certifications.
+            </span>
           </h2>
 
         </div>
@@ -3075,9 +4096,12 @@
 
         <div class="education-grid">
 
+
           <div class="education-card">
 
-            <small>Certification</small>
+            <small>
+              Certification
+            </small>
 
             <h3>
               Diploma in Technical SEO Training
@@ -3092,14 +4116,17 @@
 
           <div class="education-card">
 
-            <small>Certification</small>
+            <small>
+              Certification
+            </small>
 
             <h3>
               Diploma in Advanced Media Marketing Management
             </h3>
 
             <p>
-              Advanced training in digital marketing and media management.
+              Advanced training in digital marketing and
+              media management.
             </p>
 
           </div>
@@ -3107,7 +4134,9 @@
 
           <div class="education-card">
 
-            <small>Education</small>
+            <small>
+              Education
+            </small>
 
             <h3>
               BS (Hons) Environmental Sciences
@@ -3118,6 +4147,7 @@
             </p>
 
           </div>
+
 
         </div>
 
@@ -3130,7 +4160,7 @@
          CTA
     ====================================================== -->
 
-    <section class="cta">
+    <section>
 
       <div class="container">
 
@@ -3142,14 +4172,17 @@
 
           <h2>
             Ready to improve your
-            <span class="gradient-text">search visibility?</span>
+            <span class="gradient-text">
+              search visibility?
+            </span>
           </h2>
 
           <p>
-            Looking for an SEO Expert to improve rankings, organic
-            traffic and search performance? Let's connect and
-            discuss your SEO goals.
+            Looking for an SEO Expert to improve rankings,
+            organic traffic and search performance?
+            Let's connect and discuss your SEO goals.
           </p>
+
 
           <div class="cta-actions">
 
@@ -3162,12 +4195,14 @@
               💬 WhatsApp Me
             </a>
 
+
             <a
               href="mailto:uk4918148@gmail.com"
               class="btn"
             >
               Email Me →
             </a>
+
 
             <a
               href="https://pk.linkedin.com/in/umer-farooq-khan"
@@ -3177,6 +4212,7 @@
             >
               Connect on LinkedIn ↗
             </a>
+
 
             <a
               href="Umer-Farooq-Khan-SEO-CV.pdf"
@@ -3206,11 +4242,15 @@
 
         <div class="section-header center">
 
-          <span class="section-kicker">09 / Contact</span>
+          <span class="section-kicker">
+            10 / Contact
+          </span>
 
           <h2 class="section-title">
             Let's
-            <span class="gradient-text">connect.</span>
+            <span class="gradient-text">
+              connect.
+            </span>
           </h2>
 
         </div>
@@ -3218,9 +4258,12 @@
 
         <div class="contact-grid">
 
+
           <div class="contact-card">
 
-            <small>Email</small>
+            <small>
+              Email
+            </small>
 
             <a href="mailto:uk4918148@gmail.com">
               uk4918148@gmail.com
@@ -3231,7 +4274,9 @@
 
           <div class="contact-card">
 
-            <small>WhatsApp</small>
+            <small>
+              WhatsApp
+            </small>
 
             <a
               href="https://wa.me/923068838148"
@@ -3246,7 +4291,9 @@
 
           <div class="contact-card">
 
-            <small>LinkedIn</small>
+            <small>
+              LinkedIn
+            </small>
 
             <a
               href="https://pk.linkedin.com/in/umer-farooq-khan"
@@ -3261,7 +4308,9 @@
 
           <div class="contact-card">
 
-            <small>GitHub</small>
+            <small>
+              GitHub
+            </small>
 
             <a
               href="https://github.com/UmerFarooqKhan-SEO"
@@ -3272,6 +4321,7 @@
             </a>
 
           </div>
+
 
         </div>
 
@@ -3317,8 +4367,7 @@
 
     <div class="container">
 
-      © 2026 Umer Farooq Khan.
-      SEO Expert | Technical SEO & Local SEO.
+      © 2026 Umer Farooq Khan · SEO Expert
 
     </div>
 
@@ -3326,41 +4375,56 @@
 
 
   <!-- =======================================================
-       MOBILE MENU SCRIPT
+       MOBILE MENU
   ======================================================== -->
 
   <script>
+
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
 
     menuToggle.addEventListener("click", function () {
 
-      navLinks.classList.toggle("open");
-
-      const expanded =
-        menuToggle.getAttribute("aria-expanded") === "true";
+      const isOpen =
+        navLinks.classList.toggle("active");
 
       menuToggle.setAttribute(
         "aria-expanded",
-        String(!expanded)
+        isOpen
+      );
+
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen
+          ? "Close navigation menu"
+          : "Open navigation menu"
       );
 
     });
 
-    document.querySelectorAll(".nav-links a").forEach(function (link) {
+
+    document.querySelectorAll(
+      ".nav-links a"
+    ).forEach(function (link) {
 
       link.addEventListener("click", function () {
 
-        navLinks.classList.remove("open");
+        navLinks.classList.remove("active");
 
         menuToggle.setAttribute(
           "aria-expanded",
           "false"
         );
 
+        menuToggle.setAttribute(
+          "aria-label",
+          "Open navigation menu"
+        );
+
       });
 
     });
+
   </script>
 
 </body>
